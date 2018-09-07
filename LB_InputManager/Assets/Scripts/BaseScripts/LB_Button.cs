@@ -26,12 +26,12 @@ public class LB_Button : MonoBehaviour {
     public void AddActionToButton(EventTriggerType eventTriggerType, Action action)
     {
         EventTrigger trigger = gameObject.AddComponent<EventTrigger>();
-        var pointerDown = new EventTrigger.Entry
+        var entry = new EventTrigger.Entry
         {
             eventID = eventTriggerType
         };
-        pointerDown.callback.AddListener((e) => { action(); });
-        trigger.triggers.Add(pointerDown);
+        entry.callback.AddListener((e) => { action(); });
+        trigger.triggers.Add(entry);
     }
 
     public virtual void OnTouchDown()
