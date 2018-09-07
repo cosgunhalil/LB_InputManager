@@ -61,3 +61,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 LB_InputManager/Temp/UnityLockfile
+LB_InputManager/Library/assetDatabase3
+LB_InputManager/Library/assetDatabase3
+*.lock
