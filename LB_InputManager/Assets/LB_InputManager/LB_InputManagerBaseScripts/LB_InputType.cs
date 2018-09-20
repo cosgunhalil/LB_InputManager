@@ -7,5 +7,6 @@
 public enum ButtonType
 {
     button1,
-    button2
+    button2,
+    joystick
 }
